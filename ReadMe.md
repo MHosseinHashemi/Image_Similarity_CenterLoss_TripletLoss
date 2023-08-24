@@ -6,6 +6,7 @@
 
 Image similarity tasks involve determining how similar two or more images are to each other. In these tasks, it's crucial to learn feature representations that can capture relevant patterns and structures from the images. One common approach to enhancing the performance of image similarity tasks is by leveraging loss functions like Center Loss and Triplet Loss.
 
+
 ### Center Loss
 
 Center Loss is a loss function that aims to improve the intra-class compactness and inter-class separability of feature embeddings. It is calculated as follows:
@@ -20,6 +21,7 @@ Where:
 - c_yi is the center of the class to which the i-th image belongs.
 
 Center Loss encourages the feature embeddings of images from the same class to be close to their corresponding class centers, making the feature space more compact and well-separated.
+
 
 ### Triplet Loss
 
