@@ -7,7 +7,10 @@
 Image similarity tasks involve determining how similar two or more images are to each other. In these tasks, it's crucial to learn feature representations that can capture relevant patterns and structures from the images. One common approach to enhancing the performance of image similarity tasks is by leveraging loss functions like Center Loss and Triplet Loss.
 
 
-### Center Loss
+## Center Loss
+
+<p align="center"><img src="https://www.mdpi.com/applsci/applsci-10-04669/article_deploy/html/images/applsci-10-04669-g005.png"/></p>
+
 
 Center Loss is a loss function that aims to improve the intra-class compactness and inter-class separability of feature embeddings. It is calculated as follows:
 
@@ -23,13 +26,18 @@ Where:
 Center Loss encourages the feature embeddings of images from the same class to be close to their corresponding class centers, making the feature space more compact and well-separated.
 
 
-### Triplet Loss
+## Triplet Loss
 
-Triplet Loss is another technique used in image similarity tasks. It involves training the model using triplets of images: an anchor image (A), a positive image (P, similar to the anchor), and a negative image (N, dissimilar to the anchor). The loss is defined as:
+<p align="center"><img src="https://upload.wikimedia.org/wikipedia/commons/f/f2/The-Triplet-loss-in-cosine-similarity.png"/></p>
+
+Triplet Loss is another technique used in image similarity tasks. It involves training the model using triplets of images: an anchor image (A), a positive image (P, similar to the anchor), and a negative image (N, dissimilar to the anchor). 
+
+The loss is defined as:
 
 <center>
 L_triplet = max(0, ||f_A - f_P||^2 - ||f_A - f_N||^2 + α)
 </center>
+
 
 Where:
 - L_triplet is the Triplet Loss.
