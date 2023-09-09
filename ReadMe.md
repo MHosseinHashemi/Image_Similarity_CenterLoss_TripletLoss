@@ -1,6 +1,6 @@
 [![MIT License](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
-# Image Similarity with Center Loss using TensorFlow
+# Image Similarity with Center Loss and Triplet Loss using TensorFlow
 
 ## Problem Statement
 
